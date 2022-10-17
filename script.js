@@ -50,36 +50,39 @@
 // }
 
 //Questão 5
-let numero = parseInt(prompt('Digite um número de 1 à 7: '));
+// let numero = parseInt(prompt('Digite um número de 1 à 7: '));
 
-if(numero == 1){
-    alert('Domingo');
-}else if(numero == 2){
-    alert('segunda-Feira');
-}else if(numero == 3){
-    alert('Terça-Feira');
-}else if(numero == 4){
-    alert('Quarta-Feira');
-}else if(numero == 5){
-    alert('Quinta-Feira');
-}else if(numero == 6){
-    alert('Sexta-Feira');
-}else if(numero == 7){
-    alert('Sábado');
-}else if(numero >= 8 || numero <= 0){
-    alert('Número invalido');
-}
+// if(numero == 1){
+//     alert('Domingo');
+// }else if(numero == 2){
+//     alert('segunda-Feira');
+// }else if(numero == 3){
+//     alert('Terça-Feira');
+// }else if(numero == 4){
+//     alert('Quarta-Feira');
+// }else if(numero == 5){
+//     alert('Quinta-Feira');
+// }else if(numero == 6){
+//     alert('Sexta-Feira');
+// }else if(numero == 7){
+//     alert('Sábado');
+// }else if(numero >= 8 || numero <= 0){
+//     alert('Número invalido');
+// }
 
-//Questão 6
-let salario = parseFloat(prompt('Digite seu salário: '));
-let valor_reajuste = parseFloat(prompt('Informe o percentual de reajuste: '));
+// //Questão 6
+// let salario = parseFloat(prompt('Digite seu salário: '));
+// let valor_reajuste = parseFloat(prompt('Informe o percentual de reajuste: '));
 
-if(valor_reajuste > 5){
-    alert('O reajuste é ate 5%')
-}else{
-    reajuste = (salario + (salario * (valor_reajuste/100)))
-    alert(`O salário do funcionário corrigido é de: ${reajuste.toFixed(2)}`)
-}
+// if(valor_reajuste > 5){
+//     alert('O reajuste é ate 5%')
+// }else{
+//     reajuste = (salario + (salario * (valor_reajuste/100)))
+//     alert(`O salário do funcionário corrigido é de: ${reajuste.toFixed(2)}`)
+// }
 
+let moeda = parseFloat(prompt("Informe um valor em dólar: "));
 
+let cotação = 5.40
 
+alert(`US$${moeda.toFixed(2)} é equivalente a R$${(moeda * cotação).toFixed(2)}, tendo ${cotação.toFixed(2)} como cotação`)
