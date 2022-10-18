@@ -89,35 +89,57 @@
 // alert(`US$${moeda.toFixed(2)} é equivalente a R$${(moeda * cotação).toFixed(2)}, tendo ${cotação.toFixed(2)} como cotação`);
 
 //Questão 8
-let area = parseInt(prompt("informe a área para descontaminação: "))
-let peste = prompt("Digite o tipo de praga entre 1 - 4")
+// let area = parseInt(prompt("informe a área para descontaminação: "))
+// let peste = prompt("Digite o tipo de praga entre 1 - 4")
 
-let totalValor = 0;
+// let totalValor = 0;
 
-let totalDesconto = 0;
+// let totalDesconto = 0;
 
 
-if(peste == 1){
-    totalValor = area * 50;
-}else if(peste == 2){
-    totalValor = area * 100;
-}else if(peste == 3){
-    totalValor = area *150;
-}else if(peste == 4){
-    totalValor = area * 250;
+// if(peste == 1){
+//     totalValor = area * 50;
+// }else if(peste == 2){
+//     totalValor = area * 100;
+// }else if(peste == 3){
+//     totalValor = area *150;
+// }else if(peste == 4){
+//     totalValor = area * 250;
+// }else{
+//      alert('código invalido')
+// }
+
+
+// if(area >= 1000 && totalValor >= 750){
+//     totalDesconto = ( totalValor * 0.05) + ((totalValor - 750) * 0.1);
+// }else if(area >= 1000){
+//     totalDesconto = ( totalValor * 0.05);
+// }else if(totalValor >= 750){
+//     totalDesconto = (totalValor - 750) * 0.1;
+// }else{
+//     alert('erro')
+// }
+
+// console.log(totalValor - totalDesconto)
+
+//Questao 9
+// let tempo = parseFloat(prompt("Informe o tempo de viagem em horas"));
+// let velocidade = parseInt(prompt("Informe a velocidade do carro durante a viagem: "))
+
+// let distancia = tempo * velocidade;
+
+// litros_usados= distancia / 12;
+
+// alert(`Seu veículo percorreu ${distancia} km a  ${velocidade} km/h em ${tempo}h de viagem e consumiu ${litros_usados.toFixed(2)}l de gasolina`)
+
+//Questao 10
+let valor = parseFloat(prompt("Informe o valor da prestação atrasada: "))
+let taxa = parseFloat(prompt("Informe a taxa da prestação atrasada: "))
+let tempo = parseFloat(prompt("Informe o tempo do atraso do pagamento da prestação em dias: "))
+
+if(tempo >= 1){
+    prestacao = valor + (valor* (taxa/100) * tempo);
+    alert(`R$${prestacao}`)
 }else{
-     alert('código invalido')
+    alert(`Valor inválido, o tempo de atraso deve ser em dias`)
 }
-
-
-if(area >= 1000 && totalValor >= 750){
-    totalDesconto = ( totalValor * 0.05) + ((totalValor - 750) * 0.1);
-}else if(area >= 1000){
-    totalDesconto = ( totalValor * 0.05);
-}else if(totalValor >= 750){
-    totalDesconto = (totalValor - 750) * 0.1;
-}else{
-    alert('erro')
-}
-
-console.log(totalValor - totalDesconto)
