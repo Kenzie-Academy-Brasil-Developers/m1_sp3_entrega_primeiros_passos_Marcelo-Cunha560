@@ -81,8 +81,43 @@
 //     alert(`O salário do funcionário corrigido é de: ${reajuste.toFixed(2)}`)
 // }
 
-let moeda = parseFloat(prompt("Informe um valor em dólar: "));
+//Questão 7
+// let moeda = parseFloat(prompt("Informe um valor em dólar: "));
 
-let cotação = 5.40
+// let cotação = 5.40;
 
-alert(`US$${moeda.toFixed(2)} é equivalente a R$${(moeda * cotação).toFixed(2)}, tendo ${cotação.toFixed(2)} como cotação`)
+// alert(`US$${moeda.toFixed(2)} é equivalente a R$${(moeda * cotação).toFixed(2)}, tendo ${cotação.toFixed(2)} como cotação`);
+
+//Questão 8
+let area = parseInt(prompt("informe a área para descontaminação: "))
+let peste = prompt("Digite o tipo de praga entre 1 - 4")
+
+let totalValor = 0;
+
+let totalDesconto = 0;
+
+
+if(peste == 1){
+    totalValor = area * 50;
+}else if(peste == 2){
+    totalValor = area * 100;
+}else if(peste == 3){
+    totalValor = area *150;
+}else if(peste == 4){
+    totalValor = area * 250;
+}else{
+     alert('código invalido')
+}
+
+
+if(area >= 1000 && totalValor >= 750){
+    totalDesconto = ( totalValor * 0.05) + ((totalValor - 750) * 0.1);
+}else if(area >= 1000){
+    totalDesconto = ( totalValor * 0.05);
+}else if(totalValor >= 750){
+    totalDesconto = (totalValor - 750) * 0.1;
+}else{
+    alert('erro')
+}
+
+console.log(totalValor - totalDesconto)
